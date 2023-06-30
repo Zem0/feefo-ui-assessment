@@ -1,3 +1,4 @@
 .AccountOverview {
-  background-color: transparent
+  background-color: transparent;
+  max-width: 66rem;
 }
