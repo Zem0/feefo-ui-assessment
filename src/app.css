@@ -54,6 +54,7 @@ html {
 
 body {
   font-size: 1.4rem;
+  color: hsla(0, 0%, 46%, 1.0);
   font-family: 'Roboto', sans-serif;
 }
 /* so now in most browsers: */
@@ -62,3 +63,7 @@ body {
 /* 1.2rem = 12px */
 /* 2.2rem = 22px */
 /* etc */
+
+h3 {
+  margin: 0;
+}
