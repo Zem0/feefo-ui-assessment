@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -24,12 +25,19 @@ const MainIcon = styled(FontAwesomeIcon)`
   color: hsla(200, 81%, 58%, 1.0);
 `;
 
-export const DetailHeader = ({heading, headingIcon}) => {
+export const DetailHeader = (props) => {
   return (
     <Wrapper>
-      <MainIcon icon={headingIcon} />
-      <Heading>{heading}</Heading>
+      <MainIcon icon={props.headingIcon} />
+      <Heading>{props.heading}</Heading>
       <HelpIcon icon={faInfoCircle} />
     </Wrapper>
   );
 }
+
+DetailHeader.propTypes = {
+  heading: PropTypes.string.isRequired,
+  headingIcon: PropTypes.object.isRequired,
+};
+
+export default DetailHeader;
