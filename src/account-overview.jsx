@@ -9,6 +9,8 @@ import DetailInnerRow from './components/detail-inner-row';
 import { HorizontalSplitter } from './components/horizontal-splitter';
 import VerticalSplitter from './components/vertical-splitter';
 import PercentageItem from './components/percentage-item';
+import TitleHolder from './components/title-holder';
+import SectionTitle from './components/section-title';
 
 import './account-overview.css';
 
@@ -22,15 +24,19 @@ export const AccountOverview = ({data}) => {
 
   return (
     <section className="AccountOverview">
+
       <div>
+        <TitleHolder>
+          <SectionTitle text='Account Overview' />
+        </TitleHolder>
         <DetailHolder>
           <DetailHeader heading='Sales' headingIcon={faUpload}/>
           <p>You have {uploads} uploads and {linesAdded} lines added.</p>
           <HorizontalSplitter />
           <DetailInnerRow>
-            <PercentageItem value={successfulUploads * 100 / uploads} subHeading='upload success'/>
+            <PercentageItem value={successfulUploads * 100 / uploads} text='upload success'/>
             <VerticalSplitter />
-            <PercentageItem value={linesAdded * 100 / linesAttempted} subHeading='upload success'/>
+            <PercentageItem value={linesAdded * 100 / linesAttempted} text='lines saved'/>
           </DetailInnerRow>
         </DetailHolder>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SubHeading } from '../sub-heading';
 
 const Wrapper = styled.div`
     display: flex;
@@ -17,15 +18,13 @@ const PercentSymbol = styled.span`
     font-weight: normal;
 `;
 
-const SubHeading = styled.h4`
-    color: hsla(360, 2%, 60%, 1.0);
-`;
-
-export const PercentageItem = ({value, subHeading}) => {
+export const PercentageItem = ({value, text}) => {
     return (
         <Wrapper>
             <Value>{value}<PercentSymbol>%</PercentSymbol></Value>
-            <SubHeading>{subHeading}</SubHeading>
+            { text &&
+                <SubHeading text={text} />
+            }
         </Wrapper>
     );
 }

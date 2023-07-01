@@ -7,10 +7,10 @@ import styled from 'styled-components';
  * **/
 
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    border-radius: .4rem;
-    background-color: hsla(0, 0%, 100%, 1.0);
+  display: flex;
+  flex-direction: column;
+  border-radius: .4rem;
+  background-color: hsla(0, 0%, 100%, 1.0);
 `;
 
 export const DetailHolder = ({children}) => {
