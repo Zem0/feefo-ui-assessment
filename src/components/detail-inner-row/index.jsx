@@ -6,12 +6,12 @@ const Wrapper = styled.div`
     display: inline-flex;
 `;
 
-export const DetailInnerRow = ({children}) => {
-    return (
-        <Wrapper>
-            {children}
-        </Wrapper>
-    );
+export const DetailInnerRow = ({ children }) => {
+  return (
+    <Wrapper>
+      {children}
+    </Wrapper>
+  );
 }
 
 export default DetailInnerRow;

@@ -5,7 +5,8 @@ function App() {
   const accountOverviewStub = {
     supportContact: {
       name: 'John Smith',
-      email: 'john.smith@feefo.com'
+      email: 'john.smith@feefo.com',
+      telephone: '020 3362 4208'
     },
     salesOverview: {
       uploads: 8,
