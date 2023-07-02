@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { DetailHolder } from './components/detail-holder';
 import { DetailHeader } from './components/detail-header';
 import DetailInnerRow from './components/detail-inner-row';
+import DetailInnerColumn from './components/detail-inner-column';
 import { HorizontalSplitter } from './components/horizontal-splitter';
 import VerticalSplitter from './components/vertical-splitter';
 import PercentageItem from './components/percentage-item';
@@ -26,17 +27,21 @@ export const AccountOverview = ({data}) => {
   const supportContactEmail = data.supportContact.email;
   const supportContactTelephone = data.supportContact.telephone;
 
+  const UploadSummaryText = styled.p`
+    text-align: left;
+  `
+
   return (
     <section className="AccountOverview">
-
-      <div>
         <TitleHolder>
           <SectionTitle text='Account Overview' />
           <ContactDetails title={'your feefo support contact'.toUpperCase()} name={supportContact} telephone={supportContactTelephone} email={supportContactEmail}/>
         </TitleHolder>
         <DetailHolder>
-          <DetailHeader heading='Sales' headingIcon={faUpload}/>
-          <p>You have {uploads} uploads and {linesAdded} lines added.</p>
+          <DetailInnerColumn>
+            <DetailHeader heading='Sales' headingIcon={faUpload}/>
+            <UploadSummaryText>You have <b>{uploads} uploads</b> and <b>{linesAdded}</b> lines added.</UploadSummaryText>
+          </DetailInnerColumn>
           <HorizontalSplitter />
           <DetailInnerRow>
             <PercentageItem value={successfulUploads * 100 / uploads} text={'upload success'.toUpperCase()}/>
@@ -44,7 +49,6 @@ export const AccountOverview = ({data}) => {
             <PercentageItem value={linesAdded * 100 / linesAttempted} text={'lines saved'.toUpperCase()}/>
           </DetailInnerRow>
         </DetailHolder>
-      </div>
     </section>
   );
 }

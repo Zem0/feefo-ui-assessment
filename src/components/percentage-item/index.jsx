@@ -4,7 +4,10 @@ import { SubHeading } from '../sub-heading';
 
 const Wrapper = styled.div`
     display: flex;
+    flex: 1 1 0px;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
 `;
 
 const Value = styled.span`
@@ -14,14 +17,10 @@ const Value = styled.span`
     color: hsla(143, 68%, 40%, 1.0);
 `;
 
-const PercentSymbol = styled.span`
-    font-weight: normal;
-`;
-
 export const PercentageItem = ({value, text}) => {
     return (
         <Wrapper>
-            <Value>{value}<PercentSymbol>%</PercentSymbol></Value>
+            <Value>{value}%</Value>
             { text &&
                 <SubHeading text={text} />
             }

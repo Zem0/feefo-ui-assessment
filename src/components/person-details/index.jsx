@@ -4,8 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const ColumnWrapper = styled.div`
+    gap: .4rem;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 `;
 
 const Name = styled.span`
@@ -15,6 +17,16 @@ const Name = styled.span`
 const ContactInfoWrapper = styled.div`
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: .4rem
+`;
+
+const Email = styled.span`
+    margin-inline-end: .6rem;
+`;
+
+const EnvelopeIcon = styled(FontAwesomeIcon)`
+    margin-inline-end: .5rem
 `;
 
 export const PersonDetails = ({name, email, telephone}) => {
@@ -22,10 +34,10 @@ export const PersonDetails = ({name, email, telephone}) => {
         <ColumnWrapper>
             <Name>{name}</Name>
             <ContactInfoWrapper>
-                <span>
-                    <FontAwesomeIcon icon={faEnvelope}/>
+                <Email>
+                    <EnvelopeIcon icon={faEnvelope}/>
                     {email}
-                </span>
+                </Email>
                 <span>{telephone}</span>
             </ContactInfoWrapper>
         </ColumnWrapper>

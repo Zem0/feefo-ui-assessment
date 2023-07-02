@@ -6,8 +6,8 @@ const Square = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: .4rem;
   aspect-ratio: 1 / 1;
   background-color: hsla(50, 95%, 50%, 1.0);

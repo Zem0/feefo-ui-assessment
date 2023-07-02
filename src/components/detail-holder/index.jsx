@@ -11,11 +11,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   border-radius: .4rem;
   background-color: hsla(0, 0%, 100%, 1.0);
+  box-shadow: 0 0 1.2rem hsla(0, 0%, 0%, .07);
 `;
 
 export const DetailHolder = ({children}) => {
   return (
-    <Wrapper>
+    <Wrapper className='DetailHolder'>
       {children}
     </Wrapper>
   );

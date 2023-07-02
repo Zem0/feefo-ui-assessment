@@ -1,4 +1,20 @@
 .AccountOverview {
   background-color: transparent;
   max-width: 66rem;
+  display: flex;
+  gap: 4rem;
+  padding: 4rem;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 415px) {
+  .AccountOverview {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .AccountOverview {
+    padding: 2.5rem;
+  }
 }

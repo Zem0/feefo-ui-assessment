@@ -7,6 +7,7 @@ import styled from 'styled-components';
  * **/
 
 const Title  = styled.h2`
+  font-size: 3rem;
   font-weight: 100;
   color: hsla(0,0%,20%,1.0);
 `;

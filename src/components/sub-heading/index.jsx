@@ -8,6 +8,8 @@ import styled from 'styled-components';
 
 const Heading = styled.h4`
     color: hsla(360, 2%, 60%, 1.0);
+    font-size: 1.3rem;
+    text-align: left;
 `;
 
 export const SubHeading = ({text}) => {

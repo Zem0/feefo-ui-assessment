@@ -7,8 +7,11 @@ import styled from 'styled-components';
  * **/
 
 const Wrapper = styled.div`
+  gap: 1.6rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: transparent;
 `;
 
