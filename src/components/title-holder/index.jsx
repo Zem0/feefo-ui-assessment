@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 /**
  * @function TitleHolder
@@ -15,12 +16,16 @@ const Wrapper = styled.div`
   background-color: transparent;
 `;
 
-export const TitleHolder = ({ children }) => {
+export const TitleHolder = (props) => {
   return (
     <Wrapper>
-      {children}
+      {props.children}
     </Wrapper>
   );
 }
+
+TitleHolder.propTypes = {
+  children: PropTypes.node
+};
 
 export default TitleHolder;

@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/**
+ * Represents a grey horizontal line to separate content within a section
+ * @function HorizontalSplitter
+ * @returns returns a div styled to look like a grey separating line.
+ * **/
+
 const Spacer = styled.div`
     height: .1rem;
     width: 100%;

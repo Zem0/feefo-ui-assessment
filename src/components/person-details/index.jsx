@@ -2,6 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
+
+/**
+ * Represents a persons contact details
+ * @function PersonDetails
+ * @returns returns an outer div with some child elements to show a persons name with their email and telephone number underneath. A small enveloper icon is shown to the left of the email.
+ * @param {string} name - the persons name.
+ * @param {string} email - the persons email.
+ * @param {string} telephone - the persons telephone number.
+ * **/
 
 const ColumnWrapper = styled.div`
     gap: .4rem;
@@ -43,3 +53,11 @@ export const PersonDetails = ({name, email, telephone}) => {
         </ColumnWrapper>
     );
 }
+
+PersonDetails.propTypes = {
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    telephone: PropTypes.string.isRequired
+};
+
+export default PersonDetails;

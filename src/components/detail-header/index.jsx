@@ -4,6 +4,14 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
+/**
+ * Represents a small heading for a DetailHolder.
+ * @function DetailHeader
+ * @returns a component with a small fontawesome icon of the users choice on the left with a title to the right and a help icon on the far right hand side.
+ * @param {string} headingIcon - the name of the fontawesome icon you want to show eg. 'faGear'.
+ * @param {string} heading - the title of the Details you want to show eg. 'Sales'.
+ * **/
+
 const Wrapper = styled.div`
   display: inline-flex;
   align-items: center;
