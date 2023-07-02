@@ -14,7 +14,7 @@ const Spacer = styled.div`
 
 export const VerticalSplitter = () => {
     return (
-        <Spacer />
+        <Spacer role='separator' />
     );
 }
 

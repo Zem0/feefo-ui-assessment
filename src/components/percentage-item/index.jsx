@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
  * @param {string} text - the descriptive heading for the percentage shown.
  * **/
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
     display: flex;
     flex: 1 1 0px;
     flex-direction: column;

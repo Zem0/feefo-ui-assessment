@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
  * @param {Node} children - the content or elements you want to show in this holder.
  * **/
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
     width: 100%;
     display: flex;
     flex-direction: column;

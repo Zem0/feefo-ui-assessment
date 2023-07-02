@@ -31,11 +31,12 @@ const ContactInfoWrapper = styled.div`
     gap: .4rem
 `;
 
-const Email = styled.span`
+const Email = styled.a`
     margin-inline-end: .6rem;
 `;
 
 const EnvelopeIcon = styled(FontAwesomeIcon)`
+    color: hsla(360, 0.66%, 44.22%, 1.0);
     margin-inline-end: .5rem
 `;
 
@@ -44,7 +45,7 @@ export const PersonDetails = ({name, email, telephone}) => {
         <ColumnWrapper>
             <Name>{name}</Name>
             <ContactInfoWrapper>
-                <Email>
+                <Email href={`mailto:${email}`} aria-label={`Send an email to :${email}`}>
                     <EnvelopeIcon icon={faEnvelope}/>
                     {email}
                 </Email>

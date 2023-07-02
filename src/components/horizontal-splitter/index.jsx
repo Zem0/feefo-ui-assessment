@@ -7,10 +7,14 @@ import styled from 'styled-components';
  * @returns returns a div styled to look like a grey separating line.
  * **/
 
-const Spacer = styled.div`
-    height: .1rem;
+const Spacer = styled.hr`
+    border-top: .1rem solid;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    margin: 0;
     width: 100%;
-    background-color: hsla(0, 0%, 92%, 1.0);
+    border-color: hsla(0, 0%, 92%, 1.0);
 `;
 
 export const HorizontalSplitter = () => {

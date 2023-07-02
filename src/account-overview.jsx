@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHardHat, faUpload } from '@fortawesome/free-solid-svg-icons';
+import { faUpload } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 import { DetailHolder } from './components/detail-holder';
@@ -32,7 +31,7 @@ export const AccountOverview = ({data}) => {
   `
 
   return (
-    <section className="AccountOverview">
+    <main className='AccountOverview' aria-describedby='An overview of the account showing sales data'>
         <TitleHolder>
           <SectionTitle text='Account Overview' />
           <ContactDetails title={'your feefo support contact'.toUpperCase()} name={supportContact} telephone={supportContactTelephone} email={supportContactEmail}/>
@@ -49,7 +48,7 @@ export const AccountOverview = ({data}) => {
             <PercentageItem value={linesAdded * 100 / linesAttempted} text={'lines saved'.toUpperCase()}/>
           </DetailInnerRow>
         </DetailHolder>
-    </section>
+    </main>
   );
 }
 

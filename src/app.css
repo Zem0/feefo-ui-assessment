@@ -58,16 +58,25 @@ html {
 
 body {
   font-size: 1.4rem;
-  color: hsla(0, 0%, 46%, 1.0);
+  color: hsla(360, 0.66%, 44.22%, 1.0);
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
 /* so now in most browsers: */
 /* 0.8rem = 8px */
 /* 1rem = 10px */
 /* 1.2rem = 12px */
 /* 2.2rem = 22px */
 /* etc */
+
+a {
+  color: hsla(243, 95%, 50%, 1.0);
+}
+
+a:hover {
+  text-decoration: none
+}
 
 h2,
 h3,

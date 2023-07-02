@@ -15,7 +15,7 @@ import { PersonDetails } from '../person-details';
  * @param {string} email - the contacts email address.
  * **/
 
-const ColumnWrapper = styled.div`
+const ColumnWrapper = styled.article`
   gap: 1rem;
   display: flex;
   flex-direction: column;

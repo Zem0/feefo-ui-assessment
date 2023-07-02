@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
  * **/
 
 const Text = styled.h4`
-    color: hsla(360, 2%, 60%, 1.0);
+    color: hsla(360, 0.66%, 44.22%, 1.0);
     font-size: 1.3rem;
     text-align: left;
 `;

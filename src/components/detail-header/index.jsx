@@ -25,7 +25,7 @@ const Heading = styled.h3`
 
 const HelpIcon = styled(FontAwesomeIcon)`
   margin-left: auto;
-  color: hsla(360, 3%, 74%, 1.0);
+  color: hsla(360, 0.66%, 44.22%, 1.0);
 `
 
 const MainIcon = styled(FontAwesomeIcon)`
