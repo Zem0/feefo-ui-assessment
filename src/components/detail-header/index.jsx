@@ -36,9 +36,9 @@ const MainIcon = styled(FontAwesomeIcon)`
 export const DetailHeader = (props) => {
   return (
     <Wrapper>
-      <MainIcon icon={props.headingIcon} />
+      <MainIcon data-testid='mainIcon' title='heading-icon' icon={props.headingIcon} />
       <Heading>{props.heading}</Heading>
-      <HelpIcon icon={faInfoCircle} />
+      <HelpIcon data-testid='helpIcon' icon={faInfoCircle} />
     </Wrapper>
   );
 }

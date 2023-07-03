@@ -19,7 +19,7 @@ const Spacer = styled.hr`
 
 export const HorizontalSplitter = () => {
     return (
-        <Spacer />
+        <Spacer className='HorizontalSplitter' role='separator'/>
     );
 }
 
